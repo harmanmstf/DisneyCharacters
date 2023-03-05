@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class Character(
     val created: String,
     @PrimaryKey val _id: Int,
+    val imageUrl: String,
     val name: String,
     val films: String,
     val shortFilms: String,

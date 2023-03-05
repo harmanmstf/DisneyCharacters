@@ -1,7 +1,11 @@
 package com.example.disneycharacters.di
 
 import android.content.Context
+import com.example.disneycharacters.data.local.AppDatabase
+import com.example.disneycharacters.data.local.CharacterDao
+import com.example.disneycharacters.data.remote.CharacterRemoteDataSource
 import com.example.disneycharacters.data.remote.CharacterService
+import com.example.disneycharacters.data.repository.CharacterRepository
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
