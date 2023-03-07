@@ -9,8 +9,8 @@ data class Character(
     @PrimaryKey val _id: Int,
     val imageUrl: String,
     val name: String,
-    val films: String,
-    val shortFilms: String,
-    val tvShows: String,
-    val videoGames: String
+    val films: List<String>,
+    val shortFilms: List<String>,
+    val tvShows: List<String>,
+    val videoGames: List<String>
 )

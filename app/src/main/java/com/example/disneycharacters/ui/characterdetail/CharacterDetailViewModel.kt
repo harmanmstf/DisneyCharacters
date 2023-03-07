@@ -8,8 +8,12 @@ import androidx.lifecycle.switchMap
 import com.example.disneycharacters.data.entities.Character
 import com.example.disneycharacters.data.repository.CharacterRepository
 import com.example.disneycharacters.utils.Resource
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class CharacterDetailViewModel @ViewModelInject constructor(
+
+@HiltViewModel
+class CharacterDetailViewModel @Inject constructor(
     private val repository: CharacterRepository
 ) : ViewModel() {
 

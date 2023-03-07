@@ -58,10 +58,10 @@ class CharacterDetailFragment : Fragment() {
 
     private fun bindCharacter(character: Character) {
         binding.name.text = character.name
-        binding.tvfilms.text = character.films
-        binding.tvShortFilms.text = character.shortFilms
-        binding.tvTvShows.text = character.tvShows
-        binding.tvVideoGames.text = character.videoGames
+//        binding.tvfilms.text = character.films
+//        binding.tvShortFilms.text = character.shortFilms
+//        binding.tvTvShows.text = character.tvShows
+//        binding.tvVideoGames.text = character.videoGames
         Glide.with(binding.root)
             .load(character.imageUrl)
             .transform(CircleCrop())
