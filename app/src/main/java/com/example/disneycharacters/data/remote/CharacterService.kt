@@ -7,9 +7,9 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface  CharacterService{
-    @GET("character")
+    @GET("characters")
     suspend fun getAllCharacters() : Response<CharacterList>
 
-    @GET("character/{id}")
+    @GET("characters/{id}")
     suspend fun getCharacter(@Path("id") id: Int): Response<Character>
 }

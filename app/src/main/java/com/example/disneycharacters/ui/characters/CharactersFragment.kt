@@ -28,7 +28,7 @@ class CharactersFragment : Fragment(), CharactersAdapter.CharacterItemListener {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentCharactersBinding.inflate(inflater, container, false)
         return binding.root
     }

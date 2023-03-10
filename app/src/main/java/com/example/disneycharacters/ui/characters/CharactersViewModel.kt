@@ -1,6 +1,5 @@
 package com.example.disneycharacters.ui.characters
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.disneycharacters.data.repository.CharacterRepository
