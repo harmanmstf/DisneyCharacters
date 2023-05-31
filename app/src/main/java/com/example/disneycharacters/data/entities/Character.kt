@@ -15,13 +15,4 @@ data class Character(
     val videoGames: List<String>
 )
 
-data class Character2(
-    val _id: Int,
-    val imageUrl: String,
-    val name: String,
-    val films: List<String>,
-    val shortFilms: List<String>,
-    val tvShows: List<String>,
-    val videoGames: List<String>
-)
 

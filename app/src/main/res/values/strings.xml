@@ -2,4 +2,8 @@
     <string name="app_name">DisneyCharacters</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="films">Films:</string>
+    <string name="short_films">Short films:</string>
+    <string name="tv_shows">Tv shows:</string>
+    <string name="video_games">Video games:</string>
 </resources>

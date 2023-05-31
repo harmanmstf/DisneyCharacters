@@ -5,7 +5,7 @@ import androidx.room.*
 import com.example.disneycharacters.data.entities.Character
 
 @Database(entities = [Character::class], version = 5, exportSchema = false)
-@TypeConverters(Converters::class)
+@TypeConverters(DataConverter::class)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun characterDao(): CharacterDao

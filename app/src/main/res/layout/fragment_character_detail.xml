@@ -33,52 +33,107 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image"
             tools:text="TextView" />
 
-
         <TextView
-            android:id="@+id/tvfilms"
+            android:id="@+id/tvFilmsTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="films"
-            app:layout_constraintBottom_toTopOf="@+id/tvShortFilms"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/films"
+            app:layout_constraintBottom_toTopOf="@+id/tvFilms"
             app:layout_constraintTop_toBottomOf="@id/name"
-            app:layout_constraintStart_toStartOf="@id/name"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/tvFilms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/tvShortFilmsTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvFilmsTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvShortFilmsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/short_films"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvShortFilms"
+            app:layout_constraintTop_toBottomOf="@+id/tvFilms"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 
         <TextView
             android:id="@+id/tvShortFilms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="short films"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/tvTvShowsTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvFilms"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvTvShowsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_shows"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tvTvShows"
-            app:layout_constraintTop_toBottomOf="@+id/tvfilms"
-            app:layout_constraintStart_toStartOf="@id/name"/>
+            app:layout_constraintTop_toBottomOf="@+id/tvShortFilms"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 
         <TextView
             android:id="@+id/tvTvShows"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="tv shows"
-            app:layout_constraintBottom_toTopOf="@+id/tvVideoGames"
-            app:layout_constraintTop_toBottomOf="@+id/tvShortFilms"
-            app:layout_constraintStart_toStartOf="@id/name"/>
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/tvVideoGamesTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTvShowsTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvVideoGamesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video_games"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tvVideoGames"
+            app:layout_constraintTop_toBottomOf="@+id/tvTvShows"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 
         <TextView
             android:id="@+id/tvVideoGames"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="video games"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTvShows"
-            app:layout_constraintStart_toStartOf="@id/name"/>
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@+id/tvVideoGamesTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

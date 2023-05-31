@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import com.example.disneycharacters.data.entities.Character
@@ -25,7 +24,7 @@ class CharacterDetailFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         binding = FragmentCharacterDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -37,7 +36,7 @@ class CharacterDetailFragment : Fragment() {
     }
 
     private fun setupObservers() {
-        viewModel.character.observe(viewLifecycleOwner, Observer {
+        viewModel.character.observe(viewLifecycleOwner) {
             when (it.status) {
                 Resource.Status.SUCCESS -> {
                     bindCharacter(it.data!!)
@@ -53,12 +52,12 @@ class CharacterDetailFragment : Fragment() {
                     binding.characterCl.visibility = View.GONE
                 }
             }
-        })
+        }
     }
 
     private fun bindCharacter(character: Character) {
         binding.name.text = character.name
-        binding.tvfilms.text = character.films.joinToString("\n")
+        binding.tvFilms.text = character.films.joinToString("\n")
         binding.tvShortFilms.text = character.shortFilms.joinToString("\n")
         binding.tvTvShows.text = character.tvShows.joinToString("\n")
         binding.tvVideoGames.text = character.videoGames.joinToString("\n")
